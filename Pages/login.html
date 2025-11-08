@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - StudyForge</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/auth.css">
+</head>
+<body class="auth-page">
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <!-- Left Side - Form -->
+        <div class="auth-form-side">
+            <div class="auth-header">
+                <a href="../index.html" class="auth-logo">
+                    <img src="/ASSECTS/StudyForge Logo Design 2.png" alt="StudyForge">
+                    <span>StudyForge</span>
+                </a>
+                <h1>Welcome Back</h1>
+                <p>Continue your coding journey</p>
+            </div>
+
+            <!-- Social Login -->
+            <button class="social-signup-btn google-btn">
+                <span class="social-icon">🔍</span>
+                Sign in with Google
+            </button>
+
+            <div class="divider">
+                <span>or continue with email</span>
+            </div>
+
+            <!-- Login Form -->
+            <form class="auth-form" id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email Address</label>
+                    <input type="email" id="login-email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" required placeholder="Enter your password">
+                    <div class="password-actions">
+                        <a href="forgot-password.html" class="link forgot-link">Forgot password?</a>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    <label for="remember-me">Remember me for 30 days</label>
+                </div>
+
+                <button type="submit" class="auth-btn primary-btn" id="login-btn">
+                    Sign In
+                </button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="signup.html" class="link">Sign up</a></p>
+            </div>
+        </div>
+
+        <!-- Right Side - Preview/Visual -->
+        <div class="auth-preview-side">
+            <div class="preview-content">
+                <div class="preview-card">
+                    <div class="preview-icon">📚</div>
+                    <h3>Continue Learning</h3>
+                    <p>Pick up right where you left off with your personalized study plan</p>
+                </div>
+                
+                <div class="preview-card">
+                    <div class="preview-icon">🔥</div>
+                    <h3>Maintain Your Streak</h3>
+                    <p>Don't break your learning streak - every day counts!</p>
+                </div>
+                
+                <div class="preview-card">
+                    <div class="preview-icon">🏆</div>
+                    <h3>Track Progress</h3>
+                    <p>See how far you've come and what's next in your roadmap</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JavaScript/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<div class="dashboard-home">
+    <!-- Welcome Header -->
+    <div class="welcome-header">
+        <h1>Welcome to StudyForge! 🚀</h1>
+        <p class="welcome-subtitle">Your personalized coding journey starts here</p>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-icon">🔥</div>
+            <div class="stat-content">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Day Streak</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">📚</div>
+            <div class="stat-content">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Learning Paths</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">⏱️</div>
+            <div class="stat-content">
+                <div class="stat-number">0h</div>
+                <div class="stat-label">Time Studied</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-icon">🏆</div>
+            <div class="stat-content">
+                <div class="stat-number">0</div>
+                <div class="stat-label">Achievements</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Getting Started Section -->
+    <div class="getting-started">
+        <h2>Start Your Coding Journey</h2>
+        <div class="action-cards">
+            <div class="action-card" onclick="studyForgeApp.navigateTo('create-path')">
+                <div class="action-icon">🎯</div>
+                <h3>Create Learning Path</h3>
+                <p>Choose a programming language and set your study goals</p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+            
+            <div class="action-card" onclick="studyForgeApp.navigateTo('practice')">
+                <div class="action-icon">💻</div>
+                <h3>Practice Coding</h3>
+                <p>Try coding challenges and exercises</p>
+                <button class="btn btn-outline">Start Practicing</button>
+            </div>
+            
+            <div class="action-card" onclick="studyForgeApp.navigateTo('annieworld')">
+                <div class="action-icon">🤖</div>
+                <h3>Chat with Annie</h3>
+                <p>Get AI-powered help with your coding questions</p>
+                <button class="btn btn-outline">Ask Annie</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Activity -->
+    <div class="recent-activity">
+        <h2>Recent Activity</h2>
+        <div class="empty-activity">
+            <div class="empty-icon">📝</div>
+            <p>No recent activity yet</p>
+            <small>Complete your first lesson to see activity here</small>
+        </div>
+    </div>
+</div>
+
+<style>
+.dashboard-home {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.welcome-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+
+.welcome-subtitle {
+    font-size: 1.25rem;
+    color: #9CA3AF;
+    margin: 0;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.stat-card {
+    background: #2D2D2D;
+    border: 1px solid #404040;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    border-color: #3B82F6;
+}
+
+.stat-icon {
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+.stat-content {
+    flex: 1;
+}
+
+.stat-number {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 0.25rem;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    color: #9CA3AF;
+    font-weight: 500;
+}
+
+/* Getting Started */
+.getting-started {
+    margin-bottom: 3rem;
+}
+
+.getting-started h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #FFFFFF;
+}
+
+.action-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.action-card {
+    background: #2D2D2D;
+    border: 1px solid #404040;
+    border-radius: 0.75rem;
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-card:hover {
+    border-color: #3B82F6;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.action-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.action-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #FFFFFF;
+}
+
+.action-card p {
+    color: #9CA3AF;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+/* Buttons */
+.btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background: #3B82F6;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2563EB;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 1px solid #4B5563;
+    color: #D1D5DB;
+}
+
+.btn-outline:hover {
+    background: #374151;
+    border-color: #6B7280;
+}
+
+/* Recent Activity */
+.recent-activity h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #FFFFFF;
+}
+
+.empty-activity {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #2D2D2D;
+    border: 1px solid #404040;
+    border-radius: 0.75rem;
+    color: #9CA3AF;
+}
+
+.empty-activity .empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.empty-activity p {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    color: #D1D5DB;
+}
+
+.empty-activity small {
+    color: #6B7280;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .welcome-header h1 {
+        font-size: 2rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .action-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .action-card {
+        padding: 1.5rem;
+    }
+}
+</style>

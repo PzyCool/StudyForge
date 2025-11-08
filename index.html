@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyForge - Forge Your Coding Future</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/landing.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <img src="ASSECTS/StudyForge Logo Design.png" alt="">
+            </div>
+            
+            <!-- Navigation Menu -->
+<nav class="nav-menu">
+    <a href="#features" class="nav-link">Features</a>
+    <a href="#courses" class="nav-link">Courses</a>
+    <a href="#pricing" class="nav-link">Pricing</a>
+    <a href="Pages/signup.html" class="nav-link">Sign Up</a>
+</nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+        <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Forge Your<span class="text-gradient">Coding Future</span>
+                </h1>
+                <p class="hero-description">
+                    Master programming from scratch with AI-powered study roadmaps tailored to your schedule. 
+                    Get personalized learning paths, real-time practice, and AnnieWorld AI guidance.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Start Learning Free</button>
+                    <button class="btn btn-secondary">
+                        <span>🎥</span> Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Active Learners</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Programming Languages</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Completion Rate</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="window-title">learning-path.js</div>
+                    </div>
+                    <div class="code-content">
+                        <pre><code>// Your AI-Powered Learning Path
+function createStudyPlan(hoursPerDay) {
+    const roadmap = {
+        language: "JavaScript",
+        dailyTime: hoursPerDay,
+        timeline: "8 weeks",
+        topics: ["Variables", "Functions", "DOM", "Async"],
+        progress: "45% complete"
+    };
+    return roadmap;
+}
+
+const myPlan = createStudyPlan(2);
+console.log(myPlan);</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="features-header">
+                <h2 class="features-title">Learn Smarter, Not Harder</h2>
+                <p class="features-subtitle">Everything you need to master programming, tailored to your learning style</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">AI-Powered Study Roadmaps</h3>
+                    <p class="feature-description">
+                        Tell us how much time you have, and we'll create a personalized learning path that adapts to your schedule and progress.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3 class="feature-title">Interactive Coding Practice</h3>
+                    <p class="feature-description">
+                        Learn by doing with our built-in code editor, real-time quizzes, and hands-on projects that run in your browser.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Progress Tracking & Gamification</h3>
+                    <p class="feature-description">
+                        Stay motivated with daily streaks, achievement badges, and visual progress tracking that shows how far you've come.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">AnnieWorld AI Mentor</h3>
+                    <p class="feature-description">
+                        Get instant help, code reviews, and personalized explanations from your AI mentor anytime you're stuck.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- How It Works Section -->
+    <section class="how-it-works">
+        <div class="works-container">
+            <div class="works-header">
+                <h2 class="works-title">Start Your Journey in 3 Simple Steps</h2>
+                <p class="works-subtitle">From zero to coding hero with our guided learning path</p>
+            </div>
+            
+            <div class="steps-container">
+                <!-- Step 1 -->
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Set Your Study Plan</h3>
+                        <p class="step-description">
+                            Tell us how many hours you can study each day and your learning goals. 
+                            Our AI generates a personalized roadmap just for you.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="visual-placeholder">
+                            <div class="time-input-demo">
+                                <div class="input-group">
+                                    <label>Daily Study Time</label>
+                                    <div class="time-selector">
+                                        <span>1h</span>
+                                        <span class="active">2h</span>
+                                        <span>3h</span>
+                                        <span>4h+</span>
+                                    </div>
+                                </div>
+                                <button class="generate-btn">Generate My Plan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Learn & Practice Daily</h3>
+                        <p class="step-description">
+                            Follow your personalized curriculum with video lessons, 
+                            interactive quizzes, and real coding exercises in our built-in editor.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="visual-placeholder">
+                            <div class="learning-demo">
+                                <div class="demo-tabs">
+                                    <span class="active">Lesson</span>
+                                    <span>Quiz</span>
+                                    <span>Practice</span>
+                                </div>
+                                <div class="demo-content">
+                                    <p>// Learn by doing with instant feedback</p>
+                                    <div class="code-line">function greet() {</div>
+                                    <div class="code-line indent">return "Hello, Coder!";</div>
+                                    <div class="code-line">}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Track Progress & Earn Rewards</h3>
+                        <p class="step-description">
+                            Watch your skills grow with detailed progress analytics, 
+                            maintain your learning streak, and earn certificates as you master each concept.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="visual-placeholder">
+                            <div class="progress-demo">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 65%"></div>
+                                </div>
+                                <div class="progress-stats">
+                                    <span>🔥 7-day streak</span>
+                                    <span>🏆 5 badges</span>
+                                    <span>📈 65% complete</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Courses Section -->
+    <section class="courses" id="courses">
+        <div class="courses-container">
+            <div class="courses-header">
+                <h2 class="courses-title">Master In-Demand Programming Languages</h2>
+                <p class="courses-subtitle">Choose your path and start building real-world skills from day one</p>
+            </div>
+            
+            <div class="languages-grid">
+                <!-- JavaScript -->
+                <div class="language-card">
+                    <div class="language-header">
+                        <div class="language-icon">🟨</div>
+                        <h3 class="language-name">JavaScript</h3>
+                    </div>
+                    <p class="language-description">
+                        The language of the web. Master frontend and backend development with the world's most popular programming language.
+                    </p>
+                    <div class="language-details">
+                        <div class="detail">
+                            <span class="detail-label">Difficulty</span>
+                            <span class="detail-value beginner">Beginner Friendly</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Avg. Completion</span>
+                            <span class="detail-value">8 weeks</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Projects</span>
+                            <span class="detail-value">12 hands-on</span>
+                        </div>
+                    </div>
+                    <button class="language-btn">Start Learning</button>
+                </div>
+                
+                <!-- Python -->
+                <div class="language-card">
+                    <div class="language-header">
+                        <div class="language-icon">🐍</div>
+                        <h3 class="language-name">Python</h3>
+                    </div>
+                    <p class="language-description">
+                        Versatile and powerful. Perfect for data science, AI, web development, and automation.
+                    </p>
+                    <div class="language-details">
+                        <div class="detail">
+                            <span class="detail-label">Difficulty</span>
+                            <span class="detail-value beginner">Beginner Friendly</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Avg. Completion</span>
+                            <span class="detail-value">10 weeks</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Projects</span>
+                            <span class="detail-value">15 hands-on</span>
+                        </div>
+                    </div>
+                    <button class="language-btn">Start Learning</button>
+                </div>
+                
+                <!-- C++ -->
+                <div class="language-card">
+                    <div class="language-header">
+                        <div class="language-icon">⚡</div>
+                        <h3 class="language-name">C++</h3>
+                    </div>
+                    <p class="language-description">
+                        High-performance programming. Essential for game development, systems programming, and competitive coding.
+                    </p>
+                    <div class="language-details">
+                        <div class="detail">
+                            <span class="detail-label">Difficulty</span>
+                            <span class="detail-value intermediate">Intermediate</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Avg. Completion</span>
+                            <span class="detail-value">12 weeks</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Projects</span>
+                            <span class="detail-value">10 hands-on</span>
+                        </div>
+                    </div>
+                    <button class="language-btn">Start Learning</button>
+                </div>
+                
+                <!-- Coming Soon -->
+                <div class="language-card coming-soon">
+                    <div class="language-header">
+                        <div class="language-icon">🚀</div>
+                        <h3 class="language-name">More Languages</h3>
+                    </div>
+                    <p class="language-description">
+                        We're constantly expanding! Next up: Java, Go, Rust, and more. Request your favorite language.
+                    </p>
+                    <div class="language-details">
+                        <div class="detail">
+                            <span class="detail-label">Status</span>
+                            <span class="detail-value upcoming">Coming Soon</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Vote</span>
+                            <span class="detail-value">Request a language</span>
+                        </div>
+                    </div>
+                    <button class="language-btn">Notify Me</button>
+                </div>
+            </div>
+            
+            <div class="courses-cta">
+                <p>Not sure where to start? <strong>Take our 2-minute quiz</strong> to find your perfect first language!</p>
+                <button class="btn btn-primary">Find My First Language</button>
+            </div>
+        </div>
+    </section>
+
+        <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <h2 class="pricing-title">Simple, Transparent Pricing</h2>
+                <p class="pricing-subtitle">Start free, upgrade when you're ready. No hidden fees, no surprises.</p>
+                
+                <!-- Currency Selector -->
+                <div class="currency-selector">
+                    <label for="currency-select">Select Currency:</label>
+                    <select id="currency-select" class="currency-dropdown">
+                        <option value="USD">USD ($)</option>
+                        <option value="NGN">NGN (₦)</option>
+                        <option value="GBP">GBP (£)</option>
+                        <option value="EUR">EUR (€)</option>
+                    </select>
+                </div>
+                
+                <!-- Billing Toggle -->
+                <div class="billing-toggle">
+                    <span class="billing-option active">Monthly</span>
+                    <div class="toggle-switch">
+                        <input type="checkbox" id="billing-toggle" class="toggle-input">
+                        <label for="billing-toggle" class="toggle-label"></label>
+                    </div>
+                    <span class="billing-option">Yearly <span class="save-badge">Save 20%</span></span>
+                </div>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Free Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Free</h3>
+                        <div class="plan-price">
+                            <span class="price-amount" data-usd="0" data-ngn="0" data-gbp="0" data-eur="0">$0</span>
+                            <span class="price-period">forever</span>
+                        </div>
+                        <p class="plan-description">Perfect for getting started with coding basics</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Access to 3 beginner courses</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Basic coding exercises</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Progress tracking</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Community support</span>
+                        </div>
+                        <div class="feature disabled">
+                            <span class="feature-icon">❌</span>
+                            <span>AnnieWorld AI mentor</span>
+                        </div>
+                        <div class="feature disabled">
+                            <span class="feature-icon">❌</span>
+                            <span>Advanced projects</span>
+                        </div>
+                        <div class="feature disabled">
+                            <span class="feature-icon">❌</span>
+                            <span>Certificates</span>
+                        </div>
+                    </div>
+                    
+                    <button class="plan-btn free-btn">Get Started Free</button>
+                </div>
+                
+                <!-- Pro Plan -->
+                <div class="pricing-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="plan-price">
+                            <!-- Monthly Prices -->
+                            <span class="price-amount monthly" 
+                                  data-usd="9.99" 
+                                  data-ngn="12000" 
+                                  data-gbp="7.99" 
+                                  data-eur="9.19">$9.99</span>
+                            <!-- Yearly Prices -->
+                            <span class="price-amount yearly" 
+                                  data-usd="7.99" 
+                                  data-ngn="9600" 
+                                  data-gbp="6.39" 
+                                  data-eur="7.35">$7.99</span>
+                            <span class="price-period">per month</span>
+                        </div>
+                        <p class="plan-description">Everything you need to master programming</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>All courses & languages</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Unlimited coding exercises</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Advanced progress analytics</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>AnnieWorld AI mentor 24/7</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Real-world projects</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Downloadable certificates</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Priority support</span>
+                        </div>
+                    </div>
+                    
+                    <button class="plan-btn primary-btn">Start 7-Day Free Trial</button>
+                </div>
+                
+                <!-- Team Plan -->
+                <div class="pricing-card">
+                    <div class="plan-header">
+                        <h3 class="plan-name">Team</h3>
+                        <div class="plan-price">
+                            <span class="price-amount" 
+                                  data-usd="29.99" 
+                                  data-ngn="36000" 
+                                  data-gbp="23.99" 
+                                  data-eur="27.59">$29.99</span>
+                            <span class="price-period">per month</span>
+                        </div>
+                        <p class="plan-description">For schools, bootcamps, and companies</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Everything in Pro</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Up to 10 team members</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Progress dashboard</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Custom learning paths</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Admin controls</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Bulk user management</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✅</span>
+                            <span>Dedicated support</span>
+                        </div>
+                    </div>
+                    
+                    <button class="plan-btn secondary-btn">Contact Sales</button>
+                </div>
+            </div>
+            
+            <div class="guarantee">
+                <div class="guarantee-icon">🔒</div>
+                    <div class="guarantee-content">
+                        <h4>30-Day Money-Back Guarantee</h4>
+                        <p>If you're not satisfied, get a full refund. No questions asked.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Final CTA Section -->
+    <section class="final-cta">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Forge Your Coding Future?</h2>
+                <p class="cta-subtitle">Join thousands of learners who've transformed their careers with StudyForge</p>
+                
+                <div class="cta-stats">
+                    <div class="cta-stat">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Active Learners</div>
+                    </div>
+                    <div class="cta-stat">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Completion Rate</div>
+                    </div>
+                    <div class="cta-stat">
+                        <div class="stat-number">4.9/5</div>
+                        <div class="stat-label">Student Rating</div>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-large">Start Learning Free</button>
+                    <button class="btn btn-secondary btn-large">
+                        <span>📞</span> Book a Demo
+                    </button>
+                </div>
+                
+                <div class="cta-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">🚀</span>
+                        <span>No credit card required</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">⚡</span>
+                        <span>Start coding in minutes</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">🎯</span>
+                        <span>Personalized learning path</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-visual">
+                <div class="achievement-showcase">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🏆</div>
+                        <div class="achievement-text">
+                            <div class="achievement-title">JavaScript Master</div>
+                            <div class="achievement-desc">Completed in 8 weeks</div>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">🔥</div>
+                        <div class="achievement-text">
+                            <div class="achievement-title">30-Day Streak</div>
+                            <div class="achievement-desc">Consistent learning</div>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">⭐</div>
+                        <div class="achievement-text">
+                            <div class="achievement-title">5 Projects Built</div>
+                            <div class="achievement-desc">Real-world experience</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Main Footer Content -->
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="ASSECTS/StudyForge Logo Design 2.png" alt="StudyForge Logo">
+                        <span>StudyForge</span>
+                    </div>
+                    <p class="footer-tagline">Forge Your Coding Future</p>
+                    <p class="footer-description">
+                        Master programming languages through personalized, AI-powered learning paths designed for your success.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🎬</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Courses</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">AnnieWorld AI</a></li>
+                            <li><a href="#">Roadmaps</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Partners</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">GDPR</a></li>
+                            <li><a href="#">Security</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    &copy; 2025 StudyForge. All rights reserved.
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <script src="JavaScript/landing.js"></script>
+</body>
+</html>

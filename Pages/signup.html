@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - StudyForge</title>
+    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="../Styles/auth.css">
+</head>
+<body class="auth-page">
+    <!-- Auth Container -->
+    <div class="auth-container">
+        <!-- Left Side - Form -->
+        <div class="auth-form-side">
+            <div class="auth-header">
+                <a href="../index.html" class="auth-logo">
+                    <img src="/ASSECTS/StudyForge Logo Design 2.png" alt="StudyForge">
+                    <span>StudyForge</span>
+                </a>
+                <h1>Create Your Account</h1>
+                <p>Start your coding journey today</p>
+            </div>
+
+            <!-- Social Signup -->
+            <button class="social-signup-btn google-btn">
+                <span class="social-icon">🔍</span>
+                Sign up with Google
+            </button>
+
+            <div class="divider">
+                <span>or continue with email</span>
+            </div>
+
+            <!-- Signup Form -->
+            <form class="auth-form" id="signup-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required placeholder="Create a password">
+                    <div class="password-strength">
+                        <div class="strength-bar">
+                            <div class="strength-fill" id="strength-fill"></div>
+                        </div>
+                        <span class="strength-text" id="strength-text">Weak</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+                    <div class="password-match" id="password-match">
+                        <!-- Password match indicator will appear here -->
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        I agree to the <a href="#" class="link">Terms of Service</a> and <a href="#" class="link">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="auth-btn primary-btn" id="submit-btn">
+                    Create Account
+                </button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Already have an account? <a href="login.html" class="link">Sign in</a></p>
+            </div>
+        </div>
+
+        <!-- Right Side - Preview/Visual -->
+        <div class="auth-preview-side">
+            <div class="preview-content">
+                <div class="preview-card">
+                    <div class="preview-icon">🚀</div>
+                    <h3>Start Learning Immediately</h3>
+                    <p>Access all beginner courses and start coding in minutes</p>
+                </div>
+                
+                <div class="preview-card">
+                    <div class="preview-icon">🎯</div>
+                    <h3>Personalized Roadmap</h3>
+                    <p>Set your study time and goals later in your dashboard</p>
+                </div>
+                
+                <div class="preview-card">
+                    <div class="preview-icon">🤖</div>
+                    <h3>AI-Powered Guidance</h3>
+                    <p>Get help from AnnieWorld AI when you need it</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../JavaScript/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyForge</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/dashboard.css">
+</head>
+<body class="dashboard-page">
+    <!-- Command Palette -->
+    <div class="command-palette" id="command-palette">
+        <div class="command-modal">
+            <div class="command-header">
+                <div class="command-search">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Type a command or search..." id="command-input">
+                    <span class="shortcut-hint">⌘K</span>
+                </div>
+            </div>
+            <div class="command-results" id="command-results"></div>
+        </div>
+    </div>
+
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        <!-- Fixed Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-content">
+                <!-- User Profile -->
+                <div class="user-profile">
+                    <div class="user-avatar">
+                        <div class="avatar-placeholder">👤</div>
+                    </div>
+                    <div class="user-info">
+                        <div class="user-email" id="user-email">user@studyforge.com</div>
+                    </div>
+                </div>
+
+                <!-- Search -->
+                <div class="sidebar-item search-item">
+                    <span class="sidebar-icon">🔍</span>
+                    <span class="sidebar-text">Search Courses & Content</span>
+                </div>
+
+                <div class="sidebar-divider"></div>
+
+                <!-- Quick Access Section -->
+                <div class="sidebar-section">
+                    <div class="section-label">QUICK ACCESS</div>
+                    <div class="sidebar-item active" data-page="dashboard">
+                        <span class="sidebar-icon">🏠</span>
+                        <span class="sidebar-text">Dashboard</span>
+                    </div>
+                    <div class="sidebar-item" data-page="inbox">
+                        <span class="sidebar-icon">📧</span>
+                        <span class="sidebar-text">Inbox</span>
+                        <span class="notification-badge">0</span>
+                    </div>
+                    <div class="sidebar-item" data-page="annieworld">
+                        <span class="sidebar-icon">🤖</span>
+                        <span class="sidebar-text">AnnieWorld AI</span>
+                    </div>
+                    <div class="sidebar-item" data-page="practice">
+                        <span class="sidebar-icon">💻</span>
+                        <span class="sidebar-text">Practice Area</span>
+                    </div>
+                    <div class="sidebar-item" data-page="progress">
+                        <span class="sidebar-icon">🎯</span>
+                        <span class="sidebar-text">My Progress</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-divider"></div>
+
+                <!-- My Learning Paths Section -->
+                <div class="sidebar-section learning-paths-section">
+                    <div class="section-label">MY LEARNING PATHS</div>
+                    <div class="scrollable-section" id="learning-paths-list">
+                        <!-- Empty state for new users -->
+                        <div class="empty-learning-paths">
+                            <p>No learning paths yet</p>
+                        </div>
+                        <!-- Learning paths will be dynamically added here -->
+                    </div>
+                    <div class="sidebar-item create-new" data-page="create-path">
+                        <span class="sidebar-icon">➕</span>
+                        <span class="sidebar-text">Create New Learning Path</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-divider"></div>
+
+                <!-- Community Section -->
+                <div class="sidebar-section community-section">
+                    <div class="section-label">COMMUNITY</div>
+                    <div class="scrollable-section" id="community-list">
+                        <div class="sidebar-item" data-page="study-groups">
+                            <span class="sidebar-icon">👥</span>
+                            <span class="sidebar-text">Public Study Groups</span>
+                        </div>
+                        <div class="sidebar-item" data-page="discussions">
+                            <span class="sidebar-icon">💬</span>
+                            <span class="sidebar-text">Community Discussions</span>
+                        </div>
+                        <div class="sidebar-item" data-page="leaderboard">
+                            <span class="sidebar-icon">🏅</span>
+                            <span class="sidebar-text">Global Leaderboard</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-item create-new" data-page="join-group">
+                        <span class="sidebar-icon">➕</span>
+                        <span class="sidebar-text">Join Study Group</span>
+                    </div>
+                    
+                </div>
+
+                <div class="sidebar-divider"></div>
+
+                <!-- Bottom Section -->
+                <div class="sidebar-section">
+                    <div class="sidebar-item" data-page="settings">
+                        <span class="sidebar-icon">⚙️</span>
+                        <span class="sidebar-text">Settings & Profile</span>
+                    </div>
+                    <div class="sidebar-item" data-page="trash">
+                        <span class="sidebar-icon">🗑️</span>
+                        <span class="sidebar-text">Trash</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <div class="top-bar-left">
+                    <button class="sidebar-toggle" id="sidebar-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="breadcrumb" id="breadcrumb">Dashboard</div>
+                </div>
+                <div class="top-bar-right">
+                    <button class="command-trigger" id="command-trigger">
+                        <span class="command-icon">⌘</span>
+                        <span>K</span>
+                    </button>
+                    <div class="user-menu">
+                        <div class="user-avatar small">
+                            <div class="avatar-placeholder">👤</div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dynamic Content Area -->
+            <div class="content-area" id="content-area">
+                <!-- Content will be loaded here dynamically from external HTML files -->
+                <div class="empty-page">
+                    <div class="empty-page-icon">🏠</div>
+                    <h2>Dashboard</h2>
+                    <p>Welcome to your learning dashboard</p>
+                    <p><small>Content will load from external HTML files</small></p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Inbox Sidebar -->
+        <aside class="inbox-sidebar" id="inbox-sidebar">
+            <div class="inbox-header">
+                <h3>Inbox</h3>
+                <button class="close-inbox" id="close-inbox">&times;</button>
+            </div>
+            <div class="inbox-content">
+                <div class="empty-inbox">
+                    <span class="empty-icon">📧</span>
+                    <p>No new notifications</p>
+                    <small>You're all caught up!</small>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="JavaScript/dashboard.js"></script>
+</body>
+</html>
