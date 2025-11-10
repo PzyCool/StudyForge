@@ -87,3 +87,31 @@ COMMUNITY
 
 ⚙️ Settings & Profile
 🗑️ Trash (Deleted Items)
+
+
+
+
+StudyForge/
+├── Pages/
+│   └── dashboard/
+│       ├── home.html
+│       ├── inbox.html
+│       ├── annieworld.html
+│       └── ... (other pages)
+├── Styles/
+│   ├── dashboard/           # Page-specific styles
+│   │   ├── home.css
+│   │   ├── practice.css
+│   │   ├── annieworld.css
+│   │   └── ...
+│   ├── style.css           # Global styles
+│   └── dashboard.css       # Main dashboard layout
+├── JavaScript/
+│   ├── dashboard/          # Page-specific scripts
+│   │   ├── home.js
+│   │   ├── practice.js
+│   │   ├── annieworld.js
+│   │   └── ...
+│   ├── dashboard.js        # Main SPA controller
+│   └── utils.js            # Shared utilities
+└── dashboard.html

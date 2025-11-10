@@ -1,280 +1,247 @@
-<div class="dashboard-home">
-    <!-- Welcome Header -->
-    <div class="welcome-header">
-        <h1>Welcome to StudyForge! 🚀</h1>
-        <p class="welcome-subtitle">Your personalized coding journey starts here</p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/dashboard/home.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="home-page">
+    <!-- Section 1: AnnieWorld AI Prompt -->
+    <section class="ai-promotion-section">
+        <div class="ai-promotion-card">
+            <div class="ai-promotion-content">
+                <h3>🤖 Get AI Coding Help</h3>
+                <p>Try full-page AnnieWorld AI from the sidebar for instant coding assistance and explanations.</p>
+            </div>
+            <button class="dismiss-btn" aria-label="Dismiss this card">×</button>
+        </div>
+    </section>
 
-    <!-- Quick Stats -->
-    <div class="stats-grid">
-        <div class="stat-card">
-            <div class="stat-icon">🔥</div>
-            <div class="stat-content">
-                <div class="stat-number">0</div>
-                <div class="stat-label">Day Streak</div>
-            </div>
+    <!-- Section 2: Quick Access Widgets -->
+    <section class="quick-access-section">
+        <div class="section-header">
+            <h2>Quick Access</h2>
+            <button class="edit-widgets-btn">Edit Widgets</button>
         </div>
-        <div class="stat-card">
-            <div class="stat-icon">📚</div>
-            <div class="stat-content">
-                <div class="stat-number">0</div>
-                <div class="stat-label">Learning Paths</div>
-            </div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-icon">⏱️</div>
-            <div class="stat-content">
-                <div class="stat-number">0h</div>
-                <div class="stat-label">Time Studied</div>
-            </div>
-        </div>
-        <div class="stat-card">
-            <div class="stat-icon">🏆</div>
-            <div class="stat-content">
-                <div class="stat-number">0</div>
-                <div class="stat-label">Achievements</div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Getting Started Section -->
-    <div class="getting-started">
-        <h2>Start Your Coding Journey</h2>
-        <div class="action-cards">
-            <div class="action-card" onclick="studyForgeApp.navigateTo('create-path')">
-                <div class="action-icon">🎯</div>
-                <h3>Create Learning Path</h3>
-                <p>Choose a programming language and set your study goals</p>
-                <button class="btn btn-primary">Get Started</button>
+        <div class="quick-access-widgets">
+            <div class="widget-card" data-widget="getting-started">
+                <div class="widget-icon">👋</div>
+                <div class="widget-content">
+                    <h4>Getting Started</h4>
+                    <p>Setup your learning journey</p>
+                </div>
             </div>
             
-            <div class="action-card" onclick="studyForgeApp.navigateTo('practice')">
-                <div class="action-icon">💻</div>
-                <h3>Practice Coding</h3>
-                <p>Try coding challenges and exercises</p>
-                <button class="btn btn-outline">Start Practicing</button>
+            <div class="widget-card" data-widget="new-path">
+                <div class="widget-icon">➕</div>
+                <div class="widget-content">
+                    <h4>New Learning Path</h4>
+                    <p>Create a new study plan</p>
+                </div>
             </div>
             
-            <div class="action-card" onclick="studyForgeApp.navigateTo('annieworld')">
-                <div class="action-icon">🤖</div>
-                <h3>Chat with Annie</h3>
-                <p>Get AI-powered help with your coding questions</p>
-                <button class="btn btn-outline">Ask Annie</button>
+            <!-- More widgets can be added here -->
+        </div>
+    </section>
+
+    <!-- Section 3: Featured Learning Paths -->
+    <section class="featured-paths-section">
+        <div class="section-header">
+            <h2>Featured Learning Paths</h2>
+            <div class="section-actions">
+                <button class="carousel-nav prev" aria-label="Previous paths">‹</button>
+                <button class="carousel-nav next" aria-label="Next paths">›</button>
             </div>
         </div>
-    </div>
+        <div class="paths-carousel">
+            <div class="path-card">
+                <div class="path-preview">
+                    <div class="path-icon">📚</div>
+                </div>
+                <div class="path-info">
+                    <h4>The Ultimate Guide to StudyForge</h4>
+                    <p>Master the platform and accelerate your learning</p>
+                </div>
+            </div>
+            
+            <div class="path-card">
+                <div class="path-preview">
+                    <div class="language-icon js">JS</div>
+                </div>
+                <div class="path-info">
+                    <h4>JavaScript Mastery</h4>
+                    <p>From basics to advanced concepts</p>
+                    <div class="path-stats">
+                        <span class="enrollment-count">12,845 learners</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="path-card">
+                <div class="path-preview">
+                    <div class="language-icon python">PY</div>
+                </div>
+                <div class="path-info">
+                    <h4>Python Fundamentals</h4>
+                    <p>Data science and automation</p>
+                    <div class="path-stats">
+                        <span class="enrollment-count">9,234 learners</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="path-card">
+                <div class="path-preview">
+                    <div class="language-icon react">RX</div>
+                </div>
+                <div class="path-info">
+                    <h4>React Development</h4>
+                    <p>Modern frontend development</p>
+                    <div class="path-stats">
+                        <span class="enrollment-count">7,891 learners</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- More path cards will be added dynamically -->
+        </div>
+    </section>
 
-    <!-- Recent Activity -->
-    <div class="recent-activity">
-        <h2>Recent Activity</h2>
-        <div class="empty-activity">
-            <div class="empty-icon">📝</div>
-            <p>No recent activity yet</p>
-            <small>Complete your first lesson to see activity here</small>
+    <!-- Section 4: Progress Dashboard -->
+    <section class="progress-dashboard-section">
+        <div class="section-header">
+            <h2>Your Learning Journey</h2>
+        </div>
+        <div class="progress-dashboard">
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="current-streak">0</div>
+                        <div class="stat-label">Day Streak</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">⏱️</div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="total-time">0h</div>
+                        <div class="stat-label">Time Studied</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="paths-completed">0</div>
+                        <div class="stat-label">Paths Completed</div>
+                    </div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-content">
+                        <div class="stat-number" id="achievements-earned">0</div>
+                        <div class="stat-label">Achievements</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Learning Paths -->
+            <div class="active-paths">
+                <h3>Active Learning Paths</h3>
+                <div class="paths-list" id="active-paths-list">
+                    <!-- Active paths will be populated here -->
+                    <div class="empty-paths">
+                        <p>No active learning paths yet</p>
+                        <button class="btn btn-outline" onclick="studyForgeApp.navigateTo('create-path')">
+                            Create Your First Path
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Today's Study Plan -->
+            <div class="todays-plan">
+                <h3>Today's Study Plan</h3>
+                <div class="plan-content">
+                    <div class="empty-plan">
+                        <p>Create a learning path to see your daily study plan</p>
+                        <button class="btn btn-primary" onclick="studyForgeApp.navigateTo('create-path')">
+                            Start Learning
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Recent Activity & Community -->
+    <section class="activity-community-section">
+        <div class="section-header">
+            <h2>Recent Activity & Community</h2>
+        </div>
+        <div class="activity-community-grid">
+            <!-- Recent Activity -->
+            <div class="recent-activity">
+                <h3>Recent Activity</h3>
+                <div class="activity-list">
+                    <div class="empty-activity">
+                        <div class="empty-icon">📝</div>
+                        <p>No recent activity yet</p>
+                        <small>Complete your first lesson to see activity here</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Community Events -->
+            <div class="community-events">
+                <h3>Upcoming Events</h3>
+                <div class="events-list">
+                    <div class="event-card">
+                        <div class="event-icon">🎓</div>
+                        <div class="event-content">
+                            <h4>Live Workshop: JavaScript Async</h4>
+                            <p>Tomorrow • 2:00 PM EST</p>
+                            <button class="btn btn-outline btn-small">RSVP</button>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card">
+                        <div class="event-icon">👥</div>
+                        <div class="event-content">
+                            <h4>React Study Group</h4>
+                            <p>Weekly • Fridays 4:00 PM EST</p>
+                            <button class="btn btn-outline btn-small">Join Group</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Widget Editor Modal (Hidden by default) -->
+<div class="widget-editor-modal" id="widget-editor">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Edit Quick Access Widgets</h3>
+            <button class="close-modal">×</button>
+        </div>
+        <div class="modal-body">
+            <div class="available-widgets">
+                <!-- Widgets that can be added will go here -->
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary save-widgets">Save Changes</button>
+            <button class="btn btn-outline cancel-edit">Cancel</button>
         </div>
     </div>
 </div>
-
-<style>
-.dashboard-home {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.welcome-header {
-    text-align: center;
-    margin-bottom: 3rem;
-    padding: 2rem 0;
-}
-
-.welcome-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    color: #FFFFFF;
-}
-
-.welcome-subtitle {
-    font-size: 1.25rem;
-    color: #9CA3AF;
-    margin: 0;
-}
-
-/* Stats Grid */
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.stat-card {
-    background: #2D2D2D;
-    border: 1px solid #404040;
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    transition: transform 0.2s ease;
-}
-
-.stat-card:hover {
-    transform: translateY(-2px);
-    border-color: #3B82F6;
-}
-
-.stat-icon {
-    font-size: 2rem;
-    opacity: 0.8;
-}
-
-.stat-content {
-    flex: 1;
-}
-
-.stat-number {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: #FFFFFF;
-    margin-bottom: 0.25rem;
-}
-
-.stat-label {
-    font-size: 0.875rem;
-    color: #9CA3AF;
-    font-weight: 500;
-}
-
-/* Getting Started */
-.getting-started {
-    margin-bottom: 3rem;
-}
-
-.getting-started h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #FFFFFF;
-}
-
-.action-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5rem;
-}
-
-.action-card {
-    background: #2D2D2D;
-    border: 1px solid #404040;
-    border-radius: 0.75rem;
-    padding: 2rem;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.action-card:hover {
-    border-color: #3B82F6;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.action-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-}
-
-.action-card h3 {
-    font-size: 1.25rem;
-    margin-bottom: 0.75rem;
-    color: #FFFFFF;
-}
-
-.action-card p {
-    color: #9CA3AF;
-    margin-bottom: 1.5rem;
-    line-height: 1.5;
-}
-
-/* Buttons */
-.btn {
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 0.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.btn-primary {
-    background: #3B82F6;
-    color: white;
-}
-
-.btn-primary:hover {
-    background: #2563EB;
-}
-
-.btn-outline {
-    background: transparent;
-    border: 1px solid #4B5563;
-    color: #D1D5DB;
-}
-
-.btn-outline:hover {
-    background: #374151;
-    border-color: #6B7280;
-}
-
-/* Recent Activity */
-.recent-activity h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #FFFFFF;
-}
-
-.empty-activity {
-    text-align: center;
-    padding: 3rem 2rem;
-    background: #2D2D2D;
-    border: 1px solid #404040;
-    border-radius: 0.75rem;
-    color: #9CA3AF;
-}
-
-.empty-activity .empty-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    opacity: 0.5;
-}
-
-.empty-activity p {
-    font-size: 1.125rem;
-    margin-bottom: 0.5rem;
-    color: #D1D5DB;
-}
-
-.empty-activity small {
-    color: #6B7280;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .welcome-header h1 {
-        font-size: 2rem;
-    }
-    
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .action-cards {
-        grid-template-columns: 1fr;
-    }
-    
-    .action-card {
-        padding: 1.5rem;
-    }
-}
-</style>
+<script src="/JavaScript/dashboard/home.js"></script>
+</body>
+</html>
